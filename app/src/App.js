@@ -34,9 +34,20 @@ function App() {
         <input type="password" onChange={(e) => setLoginPassword(e.target.value)}/>
         <button onClick={() => logInWithEmailAndPassword(loginEmail, loginPassword)} >login!</button>
         <br />
+        <ul>
+          <li>
+            <Link to="/">back to main</Link>
+          </li>
+          <li>
+            <Link to="/message">About Us</Link>
+          </li>
+          <li>
+            <Link to="/contacts">Contact Us</Link>
+          </li>
+        </ul>
       </div>
       <Routes>
-        <Route exact path='/main' element={< Main />}></Route>
+        <Route exact path='/' element={< Main />}></Route>
         <Route exact path='/message' element={< Message />}></Route>
         <Route exact path='/contacts' element={< Contacts />}></Route>
       </Routes>

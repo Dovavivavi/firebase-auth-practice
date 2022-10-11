@@ -10,19 +10,8 @@ import {
 
 function Main() {
   return (
-    <div>
+    <div className='main-container'>
         <p>hey</p>
-        <ul>
-            <li>
-              <Link to="/message">About Us</Link>
-            </li>
-            <li>
-              <Link to="/contacts">Contact Us</Link>
-            </li>
-            <li>
-              <Link to="/main">back to main</Link>
-            </li>
-          </ul>
     </div>
   )
 }
